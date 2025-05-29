@@ -3,6 +3,7 @@ Information about how this directory is organised and in what order certain code
 Information about dependencies can be found in the subdirectory 'jobs', where the necessary modules for each code file are defined.
 This directory contains files to make the data used to train and evaluate Eu-RaFUCE.
 Make sure to adjust the file paths accordingly, the code is not made fully optimal to use outside of the Ghent University Tier 2 infrastructure.
+The models made during the thesis 'Spatiotemporal modelling of air temperature over European cities using machine learning' can be found in the subdirectory 'models'.
 
 1) the makeraster.py should be run to generate the 100m resolution rasters
 
