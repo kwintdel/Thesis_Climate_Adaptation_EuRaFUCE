@@ -1,7 +1,7 @@
 # Area of application (AOA)
 Information about how this directory is organised and in what order certain code should be run.
 Information about dependencies can be found in the subdirectory 'jobs', where the necessary modules for each code file are defined. 
-The subdirectory 'data' contains the importances for each of the Eu-RaFUCE submodels.
+The subdirectory 'data' contains the importances for each of the Eu-RaFUCE submodels as well as the DI thresholds for each of the clusters.
 This directory contains information about how the DI thresholds for the AOA were made for the Eu-RaFUCE model, so that it can be easily adapted for other models, as well as code which shows how to evaluate the AOA for new data.
 
 ## Making the thresholds
@@ -17,6 +17,19 @@ This directory contains information about how the DI thresholds for the AOA were
     - make_DI3_avrgdist.R
 
 ### Minimal distances and construction thresholds
+
+1) Execute all cells in the following code to obtain the minimal distances between the training and validation set for each of the clusters.
+    - mindist_CL1.ipynb
+    - mindist_CL2.ipynb
+    - mindist_CL3.ipynb
+
+2) Execute all cells (before EXAMPLE for CL2) in the following code to obtain the thresholds as well as k-d trees for each land cover in the training data for each cluster:
+    - AOA_CL1.ipynb
+    - AOA_CL2.ipynb
+    - AOA_CL1.ipynb
+
+## Usage of thresholds
+AOA_CL2.ipynb contains some extra code to already get a simple feeling of what information the AOA may provide (EXAMPLE) as well as code to add the AOA to the case studies from the thesis (Combined for case studies).
 
 
 
