@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=16
+#PBS -l walltime=24:00:00
+#PBS -l mem=300gb
+module purge 
+
+module load xarray/2023.9.0-gfbf-2023a
+module load netcdf4-python/1.6.4-foss-2023a
+
+cd /data/gent/vo/000/gvo00041/Kwint_personal/UrbClim_Emulator/ownscripts/raster_1km/raster_1km_scripts
+python3 ./raster_total_corine_perc.py
